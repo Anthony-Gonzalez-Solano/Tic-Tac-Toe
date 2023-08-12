@@ -1,0 +1,43 @@
+.squareDiv{
+    z-index: 1;
+    position: relative;
+}
+
+.square{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    width: 60px;
+    height: 60px;
+    background: transparent;
+    border: none;
+}
+
+.value{
+    z-index: 1;
+    font-size: 60px;
+    font-weight: 700;
+    color: #bd9f67;
+    transition: 0s;
+}
+
+.low{
+    transition: 6s;
+    opacity: 10%;
+}
+
+.squareDiv .sing{
+    z-index: 1;
+    position: absolute;
+    font-size: 60px;
+    font-weight: 700;
+    color: #bd9f672c;
+    opacity: 0%;
+}
+
+
+
+.squareDiv .square:hover > .sing{
+    opacity: 100%;
+}
